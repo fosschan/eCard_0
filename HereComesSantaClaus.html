@@ -205,17 +205,6 @@ p {
 	z-index:110;
 	animation: bellanimation_2_69 2s steps(69) infinite;
 }
-#bell8{
-	position:fixed;
-	background-image: url(sources/bell_8.png);
-	width:212px;
-	height:182px;
-	left:80vw;
-	top:210px;
-	opacity:0;
-	z-index:110;
-	animation: bellanimation_2_89 2s steps(89) infinite;
-}
 
 /*ball1 img:ball_2*/
 @keyframes bellanimation_2_59{
@@ -239,10 +228,6 @@ p {
 	100%{background-position:-7344px;}
 }
 
-
-
-
-
 /*ball4*/	
 @keyframes bellanimation_2_36{
 	0%{background-position: 0px;}
@@ -251,10 +236,6 @@ p {
 @keyframes bellanimation_2_69{
 	0%{background-position: 0px;}
 	100%{background-position:-14628px;}
-}
-@keyframes bellanimation_2_89{
-	0%{background-position: 0px;}
-	100%{background-position:-18868px;}
 }
 
 /*---pages---*/
@@ -852,15 +833,6 @@ if(mykey==56){//8
 		{progress:'46%', opacity:100},
 		{progress:'51%', opacity:0},  
 		{progress:'100%', opacity:0}]);
-	
-	jarallax.addAnimation('#bell8', [
-	    {progress:'0%', opacity:0}, 
-		{progress:'30%', opacity:0}, 
-		{progress:'35%', opacity:100}, 
-		{progress:'46%', opacity:100},
-		{progress:'51%', opacity:0},  
-		{progress:'100%', opacity:0}]);
-	
 }
 
 </script>
@@ -918,8 +890,6 @@ if(mykey==56){//8
 <div id="bell4"></div>
 <div id="bell5"></div>
 <div id="bell6"></div>
-<div id="bell2"></div>
-<div id="bell8"></div>
 
 <div id="p2"><p>keep scrolling</p></div>
 <div id="mouse"></div>
