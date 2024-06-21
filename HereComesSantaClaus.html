@@ -161,7 +161,7 @@ p {
 	z-index:110;
 	animation: bellanimation_1_42 2s steps(42) infinite;
 }
-#bell4{
+#bell2{
 	position:fixed;
 	background-image: url(sources/bell_4.png);
 	width:212px;
@@ -548,7 +548,7 @@ if(mykey==51){//3
 	    document.getElementById("sound-three").play();
 	    document.getElementById("sound-three").volume=0.5;}
 if(mykey==52){//4
-		var image = document.getElementById("bell4"); 
+		var image = document.getElementById("bell2"); 
 		document.onkeydown = function(){
 		image.setAttribute('style','-webkit-transform:scale(1.1);' );}
 	    document.onkeyup = function(){
@@ -829,7 +829,7 @@ if(mykey==56){//8
 		{progress:'51%', opacity:0},  
 		{progress:'100%', opacity:0}]);
 	
-	jarallax.addAnimation('#bell4', [
+	jarallax.addAnimation('#bell2', [
 	    {progress:'0%', opacity:0}, 
 		{progress:'30%', opacity:0}, 
 		{progress:'35%', opacity:100}, 
@@ -921,8 +921,9 @@ if(mykey==56){//8
 <div id="text5"></div>
 
 <div id="bell1"></div>
+<div id="bell2"></div>
 <div id="bell3"></div>
-<div id="bell4"></div>
+<div id="bell2"></div>
 <div id="bell5"></div>
 <div id="bell6"></div>
 <div id="bell7"></div>
