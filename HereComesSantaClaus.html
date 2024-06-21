@@ -255,7 +255,7 @@ p {
 	margin-left:-683px;
 	top:0%;
 	left:50%;
-	z-index:90;
+	z-index:50;
 }
 
 #startbutton {
@@ -291,7 +291,7 @@ p {
 	top:0%;
 	left:50%;
 	opacity:0;
-	z-index:90;
+	z-index:60;
 }
 
 #page3 {
@@ -303,7 +303,7 @@ p {
 	top:100%;
 	left:50%;
 	opacity:1;
-	z-index:80;
+	z-index:70;
 }
 
 #page4 {
@@ -315,7 +315,7 @@ p {
 	top:100%;
 	left:50%;
 	opacity:1;
-	z-index:70;
+	z-index:80;
 }
 
 #page5 {
@@ -340,7 +340,7 @@ p {
 	top:-200px;
 	left:50%;
 	opacity:1;
-	z-index:120;
+	z-index:65;
 }
 #p2 {
 	width: 600px;
@@ -349,7 +349,7 @@ p {
 	margin-left:-300px;
 	margin-top:-50px;
 	left:50%;
-	z-index:120;
+	z-index:65;
 }
 #mouse{
 	background: url(sources/mouse.png);
@@ -359,7 +359,7 @@ p {
 	margin-left:-11px;
 	top:1000px;
 	left:50%;
-	z-index:120;
+	z-index:65;
 }
 
 #text3 {
@@ -371,7 +371,7 @@ p {
 	top:-200px;
 	left:50%;
 	opacity:1;
-	z-index:120;
+	z-index:75;
 }
 #p3 {
 	width: 600px;
@@ -380,7 +380,7 @@ p {
 	margin-left:-300px;
 	margin-top:-50px;
 	left:50%;
-	z-index:120;
+	z-index:75;
 }
 #keyboard{
 	background:url(sources/keyboard.png);
@@ -390,7 +390,7 @@ p {
 	margin-left:-17px;
 	top:900px;
 	left:50%;
-	z-index:120;
+	z-index:75;
 }
 
 
@@ -403,7 +403,7 @@ p {
 	top:-200px;
 	left:50%;
 	opacity:1;
-	z-index:120;
+	z-index:85;
 }
 #p4 {
 	width: 600px;
@@ -412,7 +412,7 @@ p {
 	margin-left:-300px;
 	margin-top:-50px;
 	left:50%;
-	z-index:120;
+	z-index:85;
 }
 #cursor{
 	background: url(sources/cursor.png);
@@ -610,15 +610,15 @@ if(mykey==54){//6
 			{progress:'27%', top:'-500px'},
 			{progress:'100%', top:'-500px'}]);
 		jarallax.addAnimation('#p2', [
-			{progress:'0%', opacity:'0', top:'800px'}, 
-			{progress:'2%', opacity:'0', top:'800px'},
+			{progress:'0%', opacity:'0', top:'900px'}, 
+			{progress:'2%', opacity:'0', top:'900px'},
 			{progress:'3%', opacity:'1', top:'650px'},
 			{progress:'25%', opacity:'1', top:'650px'},
-			{progress:'27%', opacity:'0', top:'900px'},
-			{progress:'100%', opacity:'0', top:'900px'}]);
+			{progress:'27%', opacity:'0', top:'1000px'},
+			{progress:'100%', opacity:'0', top:'1000px'}]);
 		jarallax.addAnimation('#mouse', [
-			{progress:'0%', opacity:'0', top:'1000px'}, 
-			{progress:'2%', opacity:'0', top:'1000px'},
+			{progress:'0%', opacity:'0', top:'900px'}, 
+			{progress:'2%', opacity:'0', top:'900px'},
 			{progress:'3%', opacity:'1', top:'650px'},
 			{progress:'25%', opacity:'1', top:'650px'},
 			{progress:'27%', opacity:'0', top:'1000px'},
@@ -647,16 +647,16 @@ if(mykey==54){//6
 			{progress:'30%', opacity:'1', top:'700px'},
 			{progress:'31%', opacity:'1', top:'650px'},
 			{progress:'50%', opacity:'1', top:'650px'},
-			{progress:'52%', opacity:'0', top:'900px'},
-			{progress:'100%', opacity:'0', top:'900px'}]);
+			{progress:'52%', opacity:'0', top:'1000px'},
+			{progress:'100%', opacity:'0', top:'1000px'}]);
 		jarallax.addAnimation('#keyboard', [
 			{progress:'0%', opacity:'0', top:'900px'}, 
 			{progress:'26%', opacity:'0', top:'900px'},
 			{progress:'30%', opacity:'1', top:'700px'},
 			{progress:'31%', opacity:'1', top:'650px'},
 			{progress:'50%', opacity:'1', top:'650px'},
-			{progress:'52%', opacity:'0', top:'900px'},
-			{progress:'100%', opacity:'0', top:'900px'}]);
+			{progress:'52%', opacity:'0', top:'1000px'},
+			{progress:'100%', opacity:'0', top:'1000px'}]);
 		
 	jarallax.addAnimation('#page4', [
 		{progress:'0%', top:'768px'},
@@ -681,8 +681,8 @@ if(mykey==54){//6
 			{progress:'55%', opacity:'1', top:'700px'},
 			{progress:'56%', opacity:'1', top:'650px'},
 			{progress:'75%', opacity:'1', top:'650px'},
-			{progress:'77%', opacity:'0', top:'900px'},
-			{progress:'100%', opacity:'0', top:'900px'}]);
+			{progress:'77%', opacity:'0', top:'1000px'},
+			{progress:'100%', opacity:'0', top:'1000px'}]);
 		jarallax.addAnimation('.blanket', [
 			{progress:'0%', opacity:'0'}, 
 			{progress:'55%', opacity:'0'},
@@ -696,8 +696,8 @@ if(mykey==54){//6
 			{progress:'55%', opacity:'1', top:'690px'},
 			{progress:'56%', opacity:'1', top:'640px'},
 			{progress:'75%', opacity:'1', top:'640px'},
-			{progress:'77%', opacity:'0', top:'910px'},
-			{progress:'100%', opacity:'0', top:'910px'}]);
+			{progress:'77%', opacity:'0', top:'1010px'},
+			{progress:'100%', opacity:'0', top:'1010px'}]);
 		
 	jarallax.addAnimation('#page5', [
 		{progress:'0%', top:'768px'},
