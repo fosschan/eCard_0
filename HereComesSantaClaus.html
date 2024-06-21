@@ -145,7 +145,7 @@ p {
 	width:212px;
 	height:182px;
 	right:65vw;
-	top:100px;
+	top:120px;
 	opacity:0;
 	z-index:110;
 	animation: bell_2_anime_59 2s steps(59) infinite;
@@ -181,7 +181,7 @@ p {
 	width:212px;
 	height:182px;
 	right:60vw;
-	top:420px;
+	top:440px;
 	opacity:0;
 	z-index:110;
 	animation: bell_4_ainime_36 2s steps(36) infinite;
@@ -204,7 +204,7 @@ p {
 	width:212px;
 	height:182px;
 	left:75vw;
-	top:270px;
+	top:290px;
 	opacity:0;
 	z-index:110;
 	animation: bell_6_anime_2_69 2s steps(69) infinite;
@@ -518,7 +518,7 @@ function init() {
 	document.onkeypress = function(e){	
 	var mykey = e.which;
 		
-if(mykey==49){//49 = keyboard1
+if(mykey==49){//1
 		var image = document.getElementById("bell1"); 
 		document.onkeydown = function(){
 		image.setAttribute('style','-webkit-transform:scale(1.1);' );}
@@ -527,7 +527,7 @@ if(mykey==49){//49 = keyboard1
 	    document.getElementById("sound-one").play();
 	    document.getElementById("sound-one").volume=0.5;}
 
-if(mykey==50){//50 = keyboard 2
+if(mykey==50){//2
         var image = document.getElementById("bell2"); 
 		document.onkeydown = function(){
 		image.setAttribute('style','-webkit-transform:scale(1.1);' );}
@@ -540,7 +540,7 @@ if(mykey==50){//50 = keyboard 2
 if(mykey==51){//3
 		var image = document.getElementById("bell3"); 
 		document.onkeydown = function(){
-		image.setAttribute('style','-webkit-transform:scale(1.1);' );}
+		image.setAttribute('style','-webkit-transform:scale(5);' );}
 	    document.onkeyup = function(){
 		image.setAttribute('style','-webkit-transform:scale(1);' );}
 	    document.getElementById("sound-three").play();
