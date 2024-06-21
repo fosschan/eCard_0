@@ -9,7 +9,7 @@
 
 <style type="text/css">
 	
-body, html {
+body {
 	width:1366px;
 	height: 3840px;
 	margin: 0;
@@ -139,7 +139,7 @@ p {
 	z-index:110;
 }
 
-#bell2{
+#bell1{
 	position:fixed;
 	background-image: url(sources/bell_2.png);
 	width:212px;
@@ -524,7 +524,7 @@ function init() {
 	var mykey = e.which;
 		
 if(mykey==49){//1 
-		var image = document.getElementById("bell2"); 
+		var image = document.getElementById("bell1"); 
 		document.onkeydown = function(){
 		image.setAttribute('style','-webkit-transform:scale(1.1);' );}
 	    document.onkeyup = function(){
@@ -532,7 +532,7 @@ if(mykey==49){//1
 	    document.getElementById("sound-one").play();
 	    document.getElementById("sound-one").volume=0.5;}
 if(mykey==50){//2
-		var image = document.getElementById("bell2"); 
+		var image = document.getElementById("bell0"); 
 		document.onkeydown = function(){
 		image.setAttribute('style','-webkit-transform:scale(1.1);' );}
 	    document.onkeyup = function(){
@@ -920,7 +920,7 @@ if(mykey==56){//8
 <div id="text4"></div>
 <div id="text5"></div>
 
-<div id="bell2"></div>
+<div id="bell1"></div>
 <div id="bell3"></div>
 <div id="bell4"></div>
 <div id="bell5"></div>
