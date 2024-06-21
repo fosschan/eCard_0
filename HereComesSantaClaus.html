@@ -139,7 +139,7 @@ p {
 	z-index:110;
 }
 
-#bell2{
+#bell1{
 	position:fixed;
 	background-image: url(sources/bell_2.png);
 	width:212px;
@@ -533,7 +533,7 @@ if(mykey==49){//1
 	    document.getElementById("sound-one").play();
 	    document.getElementById("sound-one").volume=0.5;}
 if(mykey==50){//2
-		var image = document.getElementById("bell2"); 
+		var image = document.getElementById("bell1"); 
 		document.onkeydown = function(){
 		image.setAttribute('style','-webkit-transform:scale(1.1);' );}
 	    document.onkeyup = function(){
@@ -594,7 +594,7 @@ if(mykey==56){//8
 		}
 	}
 /*var image1 = document.getElementById("bell1");
-var image2 = document.getElementById("bell2");
+var image2 = document.getElementById("bell1");
 var image3 = document.getElementById("bell3");
 var image4 = document.getElementById("bell4");
 var image5 = document.getElementById("bell5");
@@ -604,6 +604,10 @@ var image8 = document.getElementById("bell8");
 
 document.addEventListener('keydown', doKeyDown, true);
 
+/*
+keyCode==49
+*/
+	
 function doKeyDown(e){
 	
 	if(e.keyCode==49){//1 
@@ -868,7 +872,7 @@ function doKeyDown(e){
 		{progress:'51%', opacity:0},  
 		{progress:'100%', opacity:0}]);
 	
-	jarallax.addAnimation('#bell2', [
+	jarallax.addAnimation('#bell1', [
 	    {progress:'0%', opacity:0}, 
 		{progress:'30%', opacity:0}, 
 		{progress:'35%', opacity:100}, 
@@ -977,7 +981,7 @@ function doKeyDown(e){
 <div id="text4"></div>
 <div id="text5"></div>
 
-<div id="bell2"></div>
+<div id="bell1"></div>
 <div id="bell3"></div>
 <div id="bell4"></div>
 <div id="bell5"></div>
