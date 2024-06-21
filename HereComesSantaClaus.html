@@ -194,10 +194,11 @@ p {
 	height:208px;
 	left:68vw;
 	top:100px;
-	opacity:1;
+	opacity:0;
 	z-index:80;
 	animation: bell_5_anime_1_48 2s steps(48)  infinite;
 }
+	
 #bell6{
 	position:fixed;
 	background-image: url(sources/bell_6.png);
@@ -563,7 +564,7 @@ else if(mykey==53){//5
 else if(mykey==54){//6
         var image = document.getElementById("bell6"); 
 		document.onkeydown = function(){
-		image.setAttribute('style','-webkit-transform:scale(1.5);' );}
+		image.setAttribute('style','-webkit-transform:scale(1.25);' );}
 	    document.onkeyup = function(){
 		image.setAttribute('style','-webkit-transform:scale(1);' );}
 	    document.getElementById("sound-six").play();
