@@ -523,7 +523,7 @@ function init() {
 	document.onkeypress = function(e){	
 	var mykey = e.which;
 		
-if(mykey==49){//1 
+if(mykey==49){//49 = keyboard1
 		var image = document.getElementById("bell1"); 
 		document.onkeydown = function(){
 		image.setAttribute('style','-webkit-transform:scale(1.1);' );}
@@ -531,6 +531,16 @@ if(mykey==49){//1
 		image.setAttribute('style','-webkit-transform:scale(1);' );}
 	    document.getElementById("sound-one").play();
 	    document.getElementById("sound-one").volume=0.5;}
+
+if(mykey==50){//50 = keyboard 2
+        var image = document.getElementById("bell2"); 
+		document.onkeydown = function(){
+		image.setAttribute('style','-webkit-transform:scale(1.1);' );}
+	    document.onkeyup = function(){
+		image.setAttribute('style','-webkit-transform:scale(1);' );}
+	    document.getElementById("sound-two").play();
+        document.getElementById("sound-two").volume=0.5;
+		}
 		
 if(mykey==51){//3
 		var image = document.getElementById("bell3"); 
@@ -565,15 +575,6 @@ if(mykey==54){//6
 		image.setAttribute('style','-webkit-transform:scale(1);' );}
 	    document.getElementById("sound-six").play();
 	    document.getElementById("sound-six").volume=0.5;
-		}
-if(mykey==50){//50 = keyboard 2
-        var image = document.getElementById("bell2"); 
-		document.onkeydown = function(){
-		image.setAttribute('style','-webkit-transform:scale(1.1);' );}
-	    document.onkeyup = function(){
-		image.setAttribute('style','-webkit-transform:scale(1);' );}
-	    document.getElementById("sound-two").play();
-        document.getElementById("sound-two").volume=0.5;
 		}
 if(mykey==56){//8
         var image = document.getElementById("bell8"); 
@@ -797,16 +798,16 @@ if(mykey==56){//8
 		{progress:'1%', top:'600px', opacity:1},
 		{progress:'3%', top:'800px', opacity:0},
 		{progress:'100%', top:'800px', opacity:0}]);
-		
-	jarallax.addAnimation('#bell0', [
+	
+	jarallax.addAnimation('#bell1', [
 	    {progress:'0%', opacity:0}, 
 		{progress:'30%', opacity:0}, 
 		{progress:'35%', opacity:100}, 
 		{progress:'46%', opacity:100},
 		{progress:'51%', opacity:0},  
 		{progress:'100%', opacity:0}]);
-	
-	jarallax.addAnimation('#bell1', [
+
+	jarallax.addAnimation('#bell2', [
 	    {progress:'0%', opacity:0}, 
 		{progress:'30%', opacity:0}, 
 		{progress:'35%', opacity:100}, 
@@ -839,14 +840,6 @@ if(mykey==56){//8
 		{progress:'100%', opacity:0}]);
 	
 	jarallax.addAnimation('#bell6', [
-	    {progress:'0%', opacity:0}, 
-		{progress:'30%', opacity:0}, 
-		{progress:'35%', opacity:100}, 
-		{progress:'46%', opacity:100},
-		{progress:'51%', opacity:0},  
-		{progress:'100%', opacity:0}]);
-	
-	jarallax.addAnimation('#bell2', [
 	    {progress:'0%', opacity:0}, 
 		{progress:'30%', opacity:0}, 
 		{progress:'35%', opacity:100}, 
@@ -914,7 +907,7 @@ if(mykey==56){//8
 <div id="text5"></div>
 
 <div id="bell1"></div>
-<div id="bell4"></div>
+<div id="bell2"></div>
 <div id="bell3"></div>
 <div id="bell4"></div>
 <div id="bell5"></div>
